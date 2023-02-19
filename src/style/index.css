@@ -149,6 +149,11 @@ background-color: var(--secundary-color);
     transition: background-color 0.8s;
 }
 
+
+.midia_mobile{
+    display: none;
+}
+
 .btn_about_me:hover{
     background-color: var(--secundary-color);
 }
@@ -425,6 +430,9 @@ footer{
 
 
 @media   (max-width:1002px){
+    .header{
+        padding:0em 1em;
+    }
     .content_menu{
         display:block;
     }
@@ -432,6 +440,10 @@ footer{
         display: none;
         width: 100%;
         flex-direction: column;
+        align-items: center;
+    }
+    .header .nav_link .midia{
+       display: none;
     }
     .nav_link.show{
         display: flex;
@@ -440,7 +452,14 @@ footer{
         display: none;
     }
     .cashier1 .name_dev{
-        font-size: 50px;
+        font-size: 40px;
+    }
+    .cashier1 .name_profession{
+        font-size: 40px;
+    }
+    .midia_mobile{
+        display: inline-block;
+        padding: 1em;
     }
     main{
         padding: 0 1.5em;
